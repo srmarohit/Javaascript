@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>QUiz Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Include main CSS-->
+        
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<script>
+$(document).ready(function(){
+$("#open-popup").click(function(){
+
+if($(this).html() == "Developer"){
+$(this).html("Hide");
+$("img").show(); }
+else
+{
+$(this).html("Developer");
+$("img").hide(); }
+
+
+});
+});
+
+</script>
+
+<style>
+img{
+display:none;
+}
+
+</style>
+
+		</head>
+		
+		<body background="bck.jpg">
+			
+		<div class="container">
+		<header>
+		<div class="pull-left">BEHAVIOUR QUIZ</div>
+				<div class="pull-right"><div class="pop-up-button">
+<button id="open-popup">Developer</button>	
+					<a href="http://www.rds93.blogspot.in">	 <img src="img.jpg"/></a>
+
+				</div>
+				</div>
+
+		</header>						
+
+		<main>
+		
+		<form class="questionForm" id="q1" data-question="1">
+		<h3>1. Which Girl should be perfect for Rohit ?</h3>
+		<ul>
+		<li><input type="radio" name="q1" value="a" />&lt;Beuatiful&gt;</li>
+				<li><input type="radio" name="q1" value="b" />&lt;Smartness&gt;</li>
+						<li><input type="radio" name="q1" value="c" />&lt;Innocent&gt;</li>
+								<li><input type="radio" name="q1" value="d" />&lt;Cleverness&gt;</li>
+		</ul>
+		<button id="submit">Submit</button>
+		</form>
+
+		<form class="questionForm" id="q2" data-question="2">
+		<h3>2. Which SmartFone should be perfect for Rohit ?</h3>
+		<ul>
+		<li><input type="radio" name="q2" value="a" />&lt;Nokia&gt;</li>
+				<li><input type="radio" name="q2" value="b" />&lt;Apple&gt;</li>
+						<li><input type="radio" name="q2" value="c" />&lt;Motorolla&gt;</li>
+								<li><input type="radio" name="q3" value="d" />&lt;HTC&gt;</li>
+		</ul>
+		<button id="submit">Submit</button>
+		</form>
+
+		<form class="questionForm" id="q3" data-question="3">
+		<h3>3. Which LapTop should be perfect for Rohit ?</h3>
+		<ul>
+		<li><input type="radio" name="q3" value="a" />&lt;Dell&gt;</li>
+				<li><input type="radio" name="q3" value="b" />&lt;Accer&gt;</li>
+						<li><input type="radio" name="q3" value="c" />&lt;Apple-MAC&gt;</li>
+								<li><input type="radio" name="q3" value="d" />&lt;Lenovo&gt;</li>
+		</ul>
+		<button id="submit">Submit</button>
+		</form>
+
+		<form class="questionForm" id="q4" data-question="4">
+		<h3>4. Which Bike should be perfect for Rohit ?</h3>
+		<ul>
+		<li><input type="radio" name="q4" value="a" />&lt;CD-Deluxe&gt;</li>
+				<li><input type="radio" name="q4" value="b" />&lt;BuLLet&gt;</li>
+						<li><input type="radio" name="q4" value="c" />&lt;Super-Splender&gt;</li>
+								<li><input type="radio" name="q4" value="d" />&lt;Pulser&gt;</li>
+		</ul>
+		<button id="submit">Submit</button>
+		</form>
+
+		
+		<form class="questionForm" id="q5" data-question="5">
+		<h3>5. Which Life should be perfect for Rohit ?</h3>
+		<ul>
+		<li><input type="radio" name="q5" value="a" />&lt;Cureness&gt;</li>
+				<li><input type="radio" name="q5" value="b" />&lt;Jobless&gt;</li>
+						<li><input type="radio" name="q5" value="c" />&lt;Mordeness&gt;</li>
+								<li><input type="radio" name="q5" value="d" />&lt;Lazyness&gt;</li>
+		</ul>
+		<button id="submit">Submit</button>		
+			
+		</form>
+		
+					
+<div id="results"></div>
+<br>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#submit').on('click', function(){
+					$('.pop-up-screen, .overlay').fadeIn();
+				});
+
+				$('.close, .overlay').on('click', function(){
+					$('.pop-up-screen, .overlay').fadeOut();
+				});
+			});
+		</script>
+		
+		</main>
+<footer>
+Total:5 Question
+</footer>
+		</div><!--Container-->
+		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/quiz.js"></script>
+		</body>
+		</html>
